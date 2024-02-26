@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ali Abdoli</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./gator.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1 class="header">Ali Abdoli</h1>
-        <img class="gator_img" width="200" height="200" src="images/gator.png" alt="Avatar" />
-        <img class="ali_img" width="200" height="200" src="images/Ali A.jpeg" alt="Avatar" />
-        <button onclick="toggleTheme()">theme</button>
-    </main>
-	<script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ali Abdoli</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./gator.ico" type="image/x-icon">
+</head>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<body>
+  <main>
+    <div class="page-outline">
+      <h1 id="name" class="header">Ali Abdoli</h1>
+      <img id="gatorImg" width="200" height="200" src="images/gator.png" alt="Avatar" />
+      <img id="aliImg" width="200" height="200" src="images/Ali A.jpeg" alt="Avatar" />
+      <h2 id="quote">"Life is a balance. You lose your grip you can fall into an abyss." - J Cole</h2>
+    </div>
+    <button class="theme-button" onclick="toggleTheme()">
+      <i id="themeIcon" data-feather="moon"></i>
+    </button>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
