@@ -8,19 +8,29 @@
   <title>Ali Abdoli</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./gator.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
 </head>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
 
 <body>
   <main>
+    <nav>
+      <ul class="navigation-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="pages/resume.html">Resume</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+      </ul>
+    </nav>  
     <div class="page-outline">
       <h1 id="name" class="header">Ali Abdoli</h1>
       <img id="gatorImg" width="200" height="200" src="images/gator.png" alt="Avatar" />
       <img id="aliImg" width="200" height="200" src="images/Ali A.jpeg" alt="Avatar" />
-      <h2 id="quote">"Life is a balance. You lose your grip you can fall into an abyss." - J Cole</h2>
+      <h2 id="quote">"One must imagine Sisyphus happy" - Camus</h2>
     </div>
     <button class="theme-button" onclick="toggleTheme()">
-      <i id="themeIcon" data-feather="moon"></i>
+      <i class="theme-icon" id="themeIcon" data-feather="moon"></i>
     </button>
   </main>
   <script src="index.js"></script>

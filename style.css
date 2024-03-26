@@ -1,13 +1,15 @@
 html {
   --background: #ffffff;
   --text: #000000;
-  --theme-button-background: rgb(225, 225, 225);
+  --border: gray;
+  --theme-button: gray;
 }
 
 :root.dark-theme {
   --background: #000000;
   --text: #ffffff;
-  --theme-button-background: rgb(252, 252, 112);
+  --border: gray;
+  --theme-button: rgb(195, 195, 0);
 }
 
 .header {
@@ -21,6 +23,7 @@ img {
 body {
   background-color: var(--background);
   color: var(--text);
+  font-family: "Computer Modern Sans", sans-serif;
 }
 
 .hide-img {
@@ -31,11 +34,16 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  background-color: var(--theme-button-background);
+  background-color: var(--background);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
+  border: 1px solid var(--text);
+}
+
+.theme-icon {
+  color: var(--theme-button);
 }
 
 .page-outline {
@@ -43,4 +51,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 85vh;
+}
+
+.navigation-menu {
+  position: absolute;
+  display: flex;
+  margin: 0px;
+  justify-content: flex-start; /* Aligns items to the left */
+  list-style: none;
+  padding: 8px; /* Adjust this value to make the background smaller */
+  background-color:var(--background); /* Changed background color to gray */
+  color: #fff;
+  border: 1px solid gray; /* Added gray outline */
+}
+
+.navigation-menu li {
+  padding: 5px 10px; /* Reduced padding */
+}
+
+.navigation-menu a {
+  color: gray;
+  text-decoration: none;
+  font-size: 0.8em; /* Smaller font size */
 }
